@@ -1,0 +1,120 @@
+#table{
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* =============================================================================
+   Responsive Table CSS
+   ========================================================================== */
+   
+   .dataTable {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-collapse: collapse;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .dataTable thead, .dataTable tbody, .dataTable thead tr, .dataTable th {
+    display: block;
+  }
+  
+  .dataTable thead {
+    float: left;
+  }
+  
+  .dataTable tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  
+  .dataTable td, .dataTable th {
+    padding: .9em .715em;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgb(70, 70, 70);
+    border: 1px solid #ddd;
+  }
+  
+  .dataTable th {
+    text-align: left;
+    background: rgb(255, 255, 255);
+  }
+  
+  .dataTable tbody tr {
+    display: table-cell;
+    background-color: #ffffff;
+  }
+  
+  .dataTable tbody td {
+    display: block;
+    color: rgba(128, 128, 128, 0.925);
+  }
+  
+  .dataTable tr:nth-child(odd) {
+      background: #f2f2f8;
+  }
+
+  .dataTable img{
+    width: 30px;
+  }
+  .dataTable th:last-child, td:last-child{
+    text-align: center;
+  }
+  @media screen and (min-width: 50em) {
+  
+    .dataTable {
+      display: table;
+    }
+    
+    .dataTable thead {
+      display: table-header-group;
+      float: none;
+    }
+    .dataTable tbody {
+      display: table-row-group;
+    }
+    
+    .dataTable thead tr, .dataTable tbody tr {
+      display: table-row;
+    }
+    
+    .dataTable th, .dataTable tbody td {
+      display: table-cell;
+    }
+    
+    .dataTable td, .dataTable th {
+      width: auto;
+    }
+    
+}
+@media screen and (max-width: 549px) {
+  .dataTable thead th:nth-child(4){
+    height: 68px;
+  }
+  #table{
+    margin: 3px;
+    padding: 8px 8px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .dataTable th:last-child{
+    text-align: left;
+  }
+  .dataTable thead th:nth-child(5){
+    height: 62px;
+  }
+}
+
+.teal{
+  .dataTable tr:nth-child(odd) {
+    background: #d1d1d3;
+    color: #fff !important;
+}
+}
